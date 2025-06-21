@@ -1,4 +1,4 @@
-const text = `Welcome To BethWrites`;
+const text = `Your Writer BethWrites`;
 
 let i = 0;
 
