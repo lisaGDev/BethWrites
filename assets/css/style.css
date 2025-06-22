@@ -146,6 +146,12 @@
   transition: 0.5s;
 }
 
+#contact .fa-linkedin.icon:hover {
+    color: #0077b5; /* LinkedIn blue */
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
 #contact .fa-facebook:hover {
   color: #3b5998;
   -webkit-transition: 0.5s;
