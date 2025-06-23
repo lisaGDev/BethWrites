@@ -1,3 +1,3 @@
-# BethWrites
-Musician Bootstrap Template by MachineBarker
+# BethWrite
+CopyWriter Bootstrap Template by MachineBarker
 
