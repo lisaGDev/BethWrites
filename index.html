@@ -31,7 +31,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="biography.html">WHO IN THE WORLD IS BETH?</a>
+                <a class="navbar-brand" href="biography.html">WHO'S BETH?</a>
                 <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -63,38 +63,138 @@
         <!-- services -->
         <section id="about" class="mb-set">
             <div class="container">
-            <h2 class="text-center">Services</h2>
-            <hr>
-            <div class="row justify-content-center text-center">
-                <div class="col-md-2 col-6 mb-4">
-                <div class="service-box p-3">
-                    <i class="fas fa-bullhorn fa-2x mb-2"></i>
-                    <h5>Ad Writing</h5>
+                <h2 class="text-center">Services</h2>
+                <hr>
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="service-box p-3">
+                            <i class="fas fa-bullhorn fa-2x mb-2"></i>
+                            <h5>Ad Writing</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="service-box p-3">
+                            <i class="fas fa-envelope fa-2x mb-2"></i>
+                            <h5>Email Writing</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="service-box p-3">
+                            <i class="fas fa-file-alt fa-2x mb-2"></i>
+                            <h5>Direct Copy</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="service-box p-3">
+                            <i class="fas fa-bolt fa-2x mb-2"></i> <!-- You can change the icon -->
+                            <h5>Brand Response</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6 mb-4">
+                        <div class="service-box p-3">
+                            <i class="fas fa-pen-nib fa-2x mb-2"></i>
+                            <h5>Landing Page</h5>
+                        </div>
+                    </div>
                 </div>
-                </div>
-                <div class="col-md-2 col-6 mb-4">
-                <div class="service-box p-3">
-                    <i class="fas fa-envelope fa-2x mb-2"></i>
-                    <h5>Email Writing</h5>
-                </div>
-                </div>
-                <div class="col-md-2 col-6 mb-4">
-                <div class="service-box p-3">
-                    <i class="fas fa-file-alt fa-2x mb-2"></i>
-                    <h5>Direct Copy</h5>
-                </div>
-                </div>
-                <div class="col-md-2 col-6 mb-4">
-                <div class="service-box p-3">
-                    <i class="fas fa-pen-nib fa-2x mb-2"></i>
-                    <h5>Landing Page</h5>
-                </div>
-                </div>
-            </div>
             </div>
         </section>
         <!-- services -->
+
+        <!-- Portfolio / Work Showcase -->
+        <section id="portfolio" class="mb-set">
+            <div class="container">
+                <h2 class="text-center">My Work</h2>
+                <hr>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <p>
+                            Explore my portfolio of writing samples, including ads, emails, landing pages, and more. Click the button below to view my work on Google Drive.
+                        </p>
+                        <a href="https://drive.google.com/your-google-drive-link" target="_blank" class="btn btn-primary">
+                            View Writing Samples
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio / Work Showcase -->
         
+        <!-- Appointment Booking Section -->
+        <section id="appointment" class="mb-set">
+            <div class="container">
+            <h2 class="text-center">Book an Appointment</h2>
+            <hr>
+            <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form id="appointmentForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" class="form-control" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <input type="time" class="form-control" id="time" name="time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Reason For Appointment</label>
+                                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Book Appointment</button>
+                        </form>
+                        <div id="appointmentSuccess" class="alert alert-success mt-3 d-none" role="alert">
+                            Thank you! Your appointment request has been submitted.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+        // This script only shows a success message.
+        // To actually send a Gmail calendar invite and notify by email, you need a backend service.
+        // The frontend code below sends the form data to a backend endpoint (e.g., /api/appointment).
+        // The backend should handle Google Calendar and Gmail API integration.
+
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            date: document.getElementById('date').value,
+            time: document.getElementById('time').value,
+            message: document.getElementById('message').value
+            };
+
+            fetch('/api/appointment', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+            })
+            .then(response => {
+            if (response.ok) {
+                document.getElementById('appointmentSuccess').classList.remove('d-none');
+                document.getElementById('appointmentForm').reset();
+            } else {
+                alert('There was an error submitting your appointment. Please try again later.');
+            }
+            })
+            .catch(() => {
+            alert('There was an error submitting your appointment. Please try again later.');
+            });
+        });
+        </script>
+
         <!-- Event -->
         <section id="event">
             <div class="jumbotron jumbotron-fluid">
@@ -121,9 +221,9 @@
         <section id="contact">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                    <h2 class="text-center">Social Media</h2>
+                    <h2 class="text-center">Contact</h2>
                     <hr class="mb-4">
-                    <div class="row text-center">
+                    <div class="row justify-content-center text-center">
                         <!-- <div class="col-md-2 col-4">
                             <a href="" target="_blank">
                                 <i class="fab fa-youtube icon"></i>
@@ -152,6 +252,11 @@
                         <div class="col-md-2 col-4 mb-4">
                             <a href="https://www.linkedin.com/in/elizabeth-oviedo" target="_blank">
                                 <i class="fab fa-linkedin icon"></i>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-4 mb-4">
+                            <a href="mailto:elizabeth.oviedo@bethwrite.com">
+                                <i class="fas fa-envelope icon"></i>
                             </a>
                         </div>
                     </div>
