@@ -39,7 +39,7 @@
 
 .jumbo-hero {
   height: 100vh;
-  background-image: url("../../img/pic0.png");
+  background-image: url("../../img/pic12.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -58,6 +58,7 @@
 .jumbo-hero h1 {
   color: #fff;
   font-family: "Epilogue", sans-serif;
+  text-shadow: 2px 2px 8px #000, 0 0 2px #000;
   font-weight: 900;
   font-size: 4em;
 }
@@ -109,7 +110,7 @@
 
 #event .jumbotron {
   height: 75%;
-  background-image: url("../../img/pic11.png");
+  background-image: url("../../img/pic13.png");
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 0px;
@@ -420,6 +421,7 @@
   .jumbo-hero h1 {
     color: #fff;
     font-family: "Epilogue", sans-serif;
+    text-shadow: 2px 2px 8px #000, 0 0 2px #000;
     font-weight: 900;
     font-size: 7em;
   }
@@ -437,7 +439,7 @@
   }
   #event .jumbotron {
     height: 100vh;
-    background-image: url("../../img/pic11.png");
+    background-image: url("../../img/pic13.png");
     background-size: cover;
   }
   #event .tour-title {
