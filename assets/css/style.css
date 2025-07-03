@@ -78,7 +78,7 @@
 }
 
 .img-hero {
-  width: 40%;         
+  width: 90%;         
   height: 40%;
   object-fit: cover;      /* Crop to fill the circle */
   border-radius: 50%;     /* Makes it a circle */
@@ -412,8 +412,8 @@
   }
 
   .img-hero {
-    width: 40%;
-    height: 40%;
+    width: 80%;
+    height: 25%;
     object-fit: cover;
     border-radius: 50%;
     display: block;
@@ -453,7 +453,7 @@
     font-size: 7em;
   }
   .img-hero {
-    width: 30%;
+    width: 45%;
     height: 30%;
     object-fit: cover;
     border-radius: 50%;
