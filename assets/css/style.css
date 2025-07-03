@@ -78,10 +78,14 @@
 }
 
 .img-hero {
-  width: 250px;
-  height: 250px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  width: 220px;           /* Adjust as needed */
+  height: 220px;          /* Adjust as needed */
+  object-fit: cover;      /* Crop to fill the circle */
+  border-radius: 50%;     /* Makes it a circle */
+  display: block;
+  margin: 0 auto;         /* Center the image */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15); /* Optional: subtle shadow */
+  padding: 0;             /* Remove extra padding */
 }
 
 .signature {
@@ -406,6 +410,17 @@
   #footer {
     display: block !important;
   }
+
+  .img-hero {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 9% auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    padding: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -438,9 +453,14 @@
     font-size: 7em;
   }
   .img-hero {
-    width: 400px;
-    height: 400px;
-    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 9% auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    padding: 0;
   }
   #galleries .photo-2 {
     width: 100%;
