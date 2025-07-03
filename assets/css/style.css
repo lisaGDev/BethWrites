@@ -406,6 +406,7 @@
     display: none !important;
   }
   #about,
+  #portfolio
   #contact,
   #footer {
     display: block !important;
