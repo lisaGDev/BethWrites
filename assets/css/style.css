@@ -396,6 +396,17 @@
           box-shadow: 5px 10px #0E0B16;
 }
 
+/* Hide all sections except #about, #services, #portfolio, #appointment, #event, and #contact on extra small screens */
+@media (max-width: 480px) {
+  body > *:not(#about):not(#contact) {
+    display: none !important;
+  }
+  #about,
+  #contact {
+    display: block !important;
+  }
+}
+
 @media (min-width: 992px) {
   .navbar .nav-link {
     margin-left: 50px;
