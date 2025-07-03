@@ -83,7 +83,7 @@
   object-fit: cover;      /* Crop to fill the circle */
   border-radius: 50%;     /* Makes it a circle */
   display: block;
-  margin: 0 auto;         /* Center the image */
+  margin: 9% auto;         /* Center the image */
   box-shadow: 0 2px 12px rgba(0,0,0,0.15); /* Optional: subtle shadow */
   padding: 0;             /* Remove extra padding */
 }
