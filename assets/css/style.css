@@ -402,11 +402,11 @@
 
 /* On iPhone 8 size screens (vertical and horizontal), show only #about, #contact, and #footer */
 @media (max-width: 375px), (max-width: 667px) and (orientation: landscape) {
-  body > *:not(#about):not(#contact):not(#footer) {
+  body > *:not(#about):not(#portfolio):not(#contact):not(#footer) {
     display: none !important;
   }
   #about,
-  #portfolio
+  #portfolio,
   #contact,
   #footer {
     display: block !important;
